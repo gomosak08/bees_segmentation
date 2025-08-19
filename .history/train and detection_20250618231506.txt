@@ -1,0 +1,2 @@
+yolo task=detect mode=train model=yolov8n.pt data=/home/gomosak/abejas/abejas_marco/data.yaml epochs=50 imgsz=640
+

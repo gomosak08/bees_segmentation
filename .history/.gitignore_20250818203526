@@ -1,0 +1,7 @@
+abejas_/
+outputs/
+runs/
+yolov12/
+*.zip
+*.pt
+*.ipynb

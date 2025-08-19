@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['cria', 'marco']
+
+roboflow:
+  workspace: unam-1m4k0
+  project: abejas-2
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/unam-1m4k0/abejas-2/dataset/5
