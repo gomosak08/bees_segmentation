@@ -1,6 +1,5 @@
 import math
 import numpy as np
-
 def normalized_to_pixel(x, y, img_w, img_h):
     return x * img_w, y * img_h
 
@@ -70,4 +69,6 @@ def load_yolo_seg_polygons(label_path):
 def norm_to_px(coords, W, H):
     return [(coords[i]*W, coords[i+1]*H) for i in range(0, len(coords), 2)]
 
-
+def polygon_area_px(points):
+    pts = np.asarray(points, dtype=np.float32)
+    return float(cv2.contourArea(pts))
